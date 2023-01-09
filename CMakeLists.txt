@@ -85,13 +85,13 @@ target_include_directories(MathGeoLib PUBLIC "src/")
 
 # install lib and header files if testing is disabled
 if (NOT MATH_TESTS_EXECUTABLE)
-	install (TARGETS MathGeoLib
-	  EXPORT ${PROJECT_NAME}Targets
-	  ARCHIVE DESTINATION lib
-	  LIBRARY DESTINATION lib
-	  RUNTIME DESTINATION bin)
-	install (DIRECTORY "src/" DESTINATION "include/MathGeoLib" FILES_MATCHING PATTERN "*.h")
-	install (DIRECTORY "src/" DESTINATION "include/MathGeoLib" FILES_MATCHING PATTERN "*.inl")
+##	install (TARGETS MathGeoLib
+##	  EXPORT ${PROJECT_NAME}Targets
+##	  ARCHIVE DESTINATION lib
+##	  LIBRARY DESTINATION lib
+##	  RUNTIME DESTINATION bin)
+##	install (DIRECTORY "src/" DESTINATION "include/MathGeoLib" FILES_MATCHING PATTERN "*.h")
+##	install (DIRECTORY "src/" DESTINATION "include/MathGeoLib" FILES_MATCHING PATTERN "*.inl")
 
 # Handle CMake Config
 # Add all targets to the build-tree export set
@@ -118,13 +118,13 @@ configure_file(${PROJECT_NAME}ConfigVersion.cmake.in
   "${PROJECT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake" @ONLY)
 
 # Install the ${PROJECT_NAME}Config.cmake and ${PROJECT_NAME}ConfigVersion.cmake
-install(FILES
-  "${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${PROJECT_NAME}Config.cmake"
-  "${PROJECT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
-  DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
+##install(FILES
+##  "${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${PROJECT_NAME}Config.cmake"
+##  "${PROJECT_BINARY_DIR}/${PROJECT_NAME}ConfigVersion.cmake"
+##  DESTINATION "${INSTALL_CMAKE_DIR}" COMPONENT dev)
 
 # Install the export set for use with the install-tree
-install(EXPORT ${PROJECT_NAME}Targets DESTINATION
-  "${INSTALL_CMAKE_DIR}" COMPONENT dev)
+##install(EXPORT ${PROJECT_NAME}Targets DESTINATION
+##  "${INSTALL_CMAKE_DIR}" COMPONENT dev)
 
 endif (NOT MATH_TESTS_EXECUTABLE)
