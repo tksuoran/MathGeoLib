@@ -81,6 +81,8 @@ if (WIN8RT)
 	set_target_properties(MathGeoLib PROPERTIES STATIC_LIBRARY_FLAGS "/ignore:4264")
 endif()
 
+target_include_directories(MathGeoLib PUBLIC "src/")
+
 # install lib and header files if testing is disabled
 if (NOT MATH_TESTS_EXECUTABLE)
 	install (TARGETS MathGeoLib
