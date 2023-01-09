@@ -43,6 +43,12 @@ inline T *AlignedNew(size_t numElements) { return AlignedNew<T>(numElements, 16)
 /// Frees memory allocated by AlignedMalloc.
 void AlignedFree(void *ptr);
 
+#ifdef _MSC_VER
+#pragma warning (push)
+#pragma warning (disable: 4010)
+#pragma warning (disable: 4996)
+#endif
+
 template<class T, size_t Alignment>
 struct AlignedAllocator : std::allocator<T>
 {
@@ -74,5 +80,9 @@ struct AlignedAllocator : std::allocator<T>
 		AlignedFree(ptr);
 	}
 };
+
+#ifdef _MSC_VER
+#pragma warning (pop)
+#endif
 
 MATH_END_NAMESPACE
