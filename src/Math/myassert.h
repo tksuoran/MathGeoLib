@@ -1,4 +1,4 @@
-/* Copyright Jukka Jyl‰nki
+/* Copyright Jukka Jyl√§nki
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
    limitations under the License. */
 
 /** @file myassert.h
-	@author Jukka Jyl‰nki
+	@author Jukka Jyl√§nki
 	@brief Control over assert() macro for MathGeoLib. */
 #include "MathLog.h"
 #include "assume.h"

@@ -1,4 +1,4 @@
-/* Copyright 2011 Jukka Jyl‰nki
+/* Copyright 2011 Jukka Jyl√§nki
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
    limitations under the License. */
 
 /** @file float4.h
-	@author Jukka Jyl‰nki
+	@author Jukka Jyl√§nki
 	@brief A 4D (x,y,z,w) homogeneous vector. */
 #pragma once
 
