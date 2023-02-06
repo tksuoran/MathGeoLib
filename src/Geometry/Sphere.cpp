@@ -323,7 +323,7 @@ Sphere WelzlSphere(const vec *pts, int numPoints, vec *support, int numSupports)
 */
 
 // The epsilon value used for enclosing sphere computations.
-static const float sEpsilon = 1e-4f;
+static const float sEpsilon = 1e-3f;
 
 Sphere Sphere::OptimalEnclosingSphere(const vec *pts, int numPoints)
 {
