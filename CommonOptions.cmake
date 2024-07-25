@@ -190,7 +190,7 @@ endif()
 # MATH_WINVER: Set this to a custom Windows version that MathGeoLib should target.
 if (MINGW AND NOT MATH_NO_WINVER)
 	if (NOT MATH_WINVER)
-		set(MATH_WINVER 0x0501)
+		set(MATH_WINVER 0x0600)
 	endif()
 	# Require Windows XP.
 	# See http://msdn.microsoft.com/en-us/library/6sehtctf.aspx
